@@ -1,0 +1,31 @@
+/* Topblur.module.css */
+
+.topBlur {
+    position: absolute;  /* Positioned relative to the nearest positioned ancestor */
+    width: 1158px;  /* Add units */
+    height: 110vh; /* Set height to cover the sections */
+    min-width: 650px;
+    min-height: 650px;
+    top: 50vh; /* Adjust to position it properly */
+    left: 130vh; /* Center it horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    border-radius: 2000px;
+    background: var(--colors-primary); /* Your primary color */
+    filter: blur(clamp(250px, 12vw, 500px));  
+    z-index: 0; /* Ensure it's behind content */
+}
+
+/* Uncomment and adjust as needed for bottom blur */
+/* .bottomBlur{
+    position: absolute;
+    width: 90vw;      
+    height: 60vw; 
+    min-width: 650px;
+    min-height: 650px;
+    left: -25vw;
+    top: 2000px;
+    border-radius: 776px;
+    background: #51793D;
+    filter: blur(clamp(100px, 12vw, 500px));  
+    z-index: 0; 
+}  */

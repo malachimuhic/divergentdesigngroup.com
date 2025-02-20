@@ -1,0 +1,69 @@
+.container {
+    color: #fff; /* White text color */
+    padding: 20px 10%; /* Padding for spacing */
+    display: flex;
+    justify-content: space-between; /* Space items apart */
+    align-items: center; /* Align items on the same horizontal line */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.line {
+    width: 100%; /* Full width line */
+    height: 1px; /* Height of the line */
+    margin-bottom: 20px; /* Space below the line */
+}
+
+.leftSection {
+    display: flex;
+    align-items: center; /* Align social and contact on the same row */
+    gap: 40px; /* Space between social icons and contact info */
+}
+
+.socials {
+    display: flex;
+    justify-content: flex-start; /* Align social icons to the left */
+    gap: 20px; /* Space between icons */
+}
+
+.socials img {
+    width: 30px; /* Size of the social icons */
+    height: 30px; /* Size of the social icons */
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.socials img:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.contact {
+    display: flex; 
+    flex-direction: column; /* Stack phone and email vertically */
+}
+
+.phone, .email {
+    display: flex;
+    align-items: center; /* Center align the icons and text */
+    margin: 5px 0; /* Space between phone and email */
+}
+
+.phone img, .email img {
+    width: 20px; /* Size of the contact icons */
+    height: 20px; /* Size of the contact icons */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.email img {
+    filter: invert(1); /* Invert color of email icon */
+}
+
+.copyRight {
+    margin-left: auto; /* Push copyright text to the right */
+    white-space: nowrap; /* Prevent text from wrapping */
+    color: #383838;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

@@ -1,0 +1,114 @@
+.container{
+    color: var(--colors-text);
+    
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Adjust spacing between title and line */
+    margin: 20px auto; /* Centers the whole title and line group */
+    width: 90vw;
+}
+
+.title{ /* About */
+    color: #FFF;
+    font-family: Outfit;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin: 20px 0 10px auto;
+    width: 90vw; /* Ensures it matches the line width */
+}
+
+.line {
+    height: 1px;
+    color: var(--colors-text); 
+    margin: 20px auto;
+    width: 90vw;
+    height: 1px;
+}
+
+.aboutInfo{
+    color: #FFF;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 20px auto;
+    width: 90vw; /* Ensures it matches the line width */
+}
+
+.ddg{
+    color: #8E98A8;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    display: inline;
+    white-space: nowrap;
+}
+
+.servicesContainer {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+    align-items: center; 
+    justify-content: center;
+    margin: 0 auto; 
+    margin-top: 54px;
+}
+
+.service {
+    background: rgba(217, 217, 217, 0.2);
+    background-blend-mode: soft-light;
+    padding: 8px 25px;
+    position: relative; 
+    transition: all 0.3s ease;
+    width: 85vw;
+}   
+
+.serviceTitle {
+    font-size: 25px;
+    font-family: Outfit;
+    margin: 10px auto; 
+    display: inline-block;
+    font-size: 31.92px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+.plusIcon {
+    float: right;
+    width: 50px; 
+    height: 50px;
+    transition: transform 0.3s ease; /* Smooth rotation for icon */
+    filter: invert(1); 
+}
+
+.rotated {
+    transform: rotate(45deg);
+}
+
+.serviceContent {
+    display: none; 
+}
+
+.visible {
+    display: block; 
+}

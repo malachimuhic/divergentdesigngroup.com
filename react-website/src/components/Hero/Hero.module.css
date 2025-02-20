@@ -1,0 +1,111 @@
+@import "../../vars.css";
+
+.container{
+    position: relative;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    align-self: stretch;
+    overflow: hidden;
+    background: var(--color-bg);
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: center; /* Title & Buttons */
+    color: var(--colors-text);
+    z-index: 1;
+    width: 100%; /* Make content width responsive */
+    max-width: 1031px; /* Max width to maintain layout */
+    height: auto; /* Allow height to adjust */
+}
+
+.title {
+    color: var(--colors-secondary);
+    text-align: center;
+    font-family: var(--font-outfit);
+    font-size: clamp(40px, 7vw, 70px); /* Makes text responsive */
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.1; /* Adjust for better spacing */
+    text-transform: uppercase;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.highlight {
+    color: var(--colors-text);
+    font-family: var(--font-outfit);
+    font-size: inherit; 
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: inline;
+    white-space: nowrap; /* white space no wrap */
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 20px; /* Space between the buttons */
+    margin-top: 20px; /* Space below the title */
+    justify-content: center; /* Center buttons within the container */
+}
+
+.aboutBtn, .servicesBtn {
+    /* Typography */
+    text-decoration: none;
+    background-color: var(--color-bg);
+    color: var(--colors-text);
+    font-size: clamp(22px 4vw 44px);
+    font-weight: 400;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    text-transform: uppercase;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    text-align: center;
+    font-family: Outfit;
+    transition: transform 0.3s; /* Smooth hover effect */
+    
+
+    /* Layout */
+    width: 133px;
+    height: 43.717px;
+    flex-shrink: 0;
+    border-radius: 110px;
+    border: 2px solid #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.buttonContainer :hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.scrollDown {
+    position: absolute;
+    bottom: 20px; /* Position at the bottom of the container */
+    font-size: 15px;
+    font-style: normal;
+    text-align: center;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    font-family: var(--font-outfit);
+    z-index: 1; /* Ensure it's above the blur */
+    color: var(--colors-text); /* Color for the text */
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.scrollDown.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+

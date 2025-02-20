@@ -1,0 +1,26 @@
+[
+    {
+      "title": "Graphic Design",
+      "imageSrc": "capabilities/GraphicDesignIcon.png"
+    },
+    {
+      "title": "CAD Design",
+      "imageSrc": "capabilities/CADdesignIcon.png"
+    },
+    {
+      "title": "Project Management",
+      "imageSrc": "capabilities/ProjectManagementIcon.png"
+    },
+    {
+      "title": "CNC",
+      "imageSrc": "capabilities/CNCIcon.png"
+    },
+    {
+      "title": "Wood, Metal, & Plastics Fabrication",
+      "imageSrc": "capabilities/FabricationIcon.png"
+    },
+    {
+      "title": "Tech Intergration",
+      "imageSrc": "capabilities/TechIntegrationIcon.png"
+    }
+  ]

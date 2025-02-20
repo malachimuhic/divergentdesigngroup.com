@@ -1,0 +1,178 @@
+@import "../../vars.css";
+
+.capabilitiesContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Adjust spacing between title and line */
+    margin: 20px auto; /* Centers the whole title and line group */
+    width: 90vw;
+}
+
+.title{ /* About */
+    color: #FFF;
+    font-family: Outfit;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin-top: 20px;
+
+    width: 80vw; /* Ensures it matches the line width */
+}
+
+
+.line {
+    height: 1px;
+    color: var(--colors-text); 
+    margin: 20px auto;
+    width: 90vw;
+    height: 1px;
+    width: 90vw;
+}
+
+.container {
+    margin-top: 10vh;
+    position: relative; 
+    padding: 50px 20px; /* Adjust padding as needed */
+    background: linear-gradient(135deg, rgba(0, 0, 0, 1), rgba(28, 42, 21, 1)); 
+    width: 84%;
+    margin-bottom: 100px;
+    
+    /* Dynamic height */
+    min-height: 70vh; /* Ensures minimum height */
+    height: auto; /* Allows it to expand based on content */
+
+    /* Adjust the colors as needed */
+    display: flex;
+    flex-direction: column;
+    color: white; /* Ensure text is readable */
+    
+    border-radius: 10px; /* Optional for rounded corners */
+}
+
+
+
+.title {
+    float: left;
+    color: #FFF;
+    position: relative;
+    font-family: Outfit;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 5.678px;
+    text-transform: uppercase;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 14px;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 1 row, 6 columns on large screens */
+    gap: 37px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 11px;
+}
+
+.skillImageContainer {
+  background-color: var(--color-secondary);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+}
+
+.skillImageContainer img {
+  width: 75px;
+  filter: invert(1); 
+}
+
+.skill p {
+    color: var(--color-text);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 23.657px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.183px;
+    
+}
+
+.whereWeDoItContainer {
+    text-align: center;
+    margin-top: 40px; /* Space from previous content */
+}
+
+.whereWeDoItTitle {
+    float: left;
+    margin-top: 30px;
+    color: #FFF;
+    position: relative;
+    font-family: Outfit;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 5.678px;
+    text-transform: uppercase;
+}
+
+.whereWeDoItList {
+    display: flex;
+    justify-content: center; /* Centers the items */
+    gap: 50px; /* Adjust spacing between items */
+    list-style: none;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 500;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    color: #FFF;
+    font-family: Outfit;
+    font-size: 23.657px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.183px;
+}
+
+@media screen and (max-width: 830px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+  }
+
+  .skills {
+    grid-template-columns: repeat(3, 1fr); /* 2 rows, 3 columns on smaller screens */
+    grid-template-rows: repeat(2, auto);
+    justify-content: center;
+  }
+
+  .history {
+    width: 100%;
+    gap: 9px;
+  }
+}

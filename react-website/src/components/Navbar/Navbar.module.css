@@ -1,0 +1,107 @@
+@import "../../vars.css";
+
+.navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 20px 10%; 
+    z-index: 2;
+    height: 10vh;
+}
+
+.navbar > * {
+    flex: 1; 
+    display: flex;
+    justify-content: center; 
+}
+
+.logo{
+    /* Logo */
+    filter: invert(1); 
+    height: 30px;
+
+    /* For text */
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--colors-text);
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+}
+
+.menuItems{
+    display: flex;
+    gap: 47px;
+    list-style: none;
+}
+
+.menuItems a{
+    color: var(--colors-text);
+    text-decoration: none;
+    color: #FFF;
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.menuItems a:hover {
+    transform: scale(1.1); /* Slightly grow */
+    color: var(--colors-secondary); /* Change to your desired hover color */
+}
+
+.menuBtn{
+    display: none;
+    width: 25px;
+}
+
+@media screen and (max-width: 830px) {
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu{
+        position: absolute;
+        right:0;
+        margin-right: 10%;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 11px;
+        z-index: 3;
+    }
+    .menuBtn{
+        display: block;
+        cursor: pointer;
+    }
+
+    .menuItems{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        border-radius: 10px;
+        background: var(--colors-bg);
+        background: linear-gradient(
+            0deg,
+            rgba(25, 55, 109, 0.1),
+            rgb(41, 41, 41)
+            100%
+            );
+        padding: 24px 33px;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    .menuHovered{
+        display: flex;
+        z-index: 1;
+    }
+}
