@@ -6,14 +6,17 @@
     height: 110vh; /* Set height to cover the sections */
     min-width: 650px;
     min-height: 650px;
-    top: 50vh; /* Adjust to position it properly */
-    left: 130vh; /* Center it horizontally */
-    transform: translateX(-50%); /* Adjust for centering */
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%); /* Centers it perfectly */
+
     border-radius: 2000px;
     background: var(--colors-primary); /* Your primary color */
     filter: blur(clamp(250px, 12vw, 500px));  
     z-index: 0; /* Ensure it's behind content */
 }
+
 
 /* Uncomment and adjust as needed for bottom blur */
 /* .bottomBlur{

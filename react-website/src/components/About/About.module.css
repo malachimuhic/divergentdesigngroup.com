@@ -25,6 +25,17 @@
     width: 90vw; /* Ensures it matches the line width */
 }
 
+.title-container, 
+.aboutInfo, 
+.ddg, 
+.title,
+.line,
+.servicesContainer {
+    position: relative; /* Ensure it stacks above */
+    z-index: 2; /* Higher than .topBlur */
+}
+
+
 .line {
     height: 1px;
     color: var(--colors-text); 
@@ -34,7 +45,7 @@
 }
 
 .aboutInfo{
-    color: #FFF;
+    color: var(--colors-text);
     text-align: center;
     font-family: Outfit;
     font-size: 20px;
@@ -78,6 +89,7 @@
     position: relative; 
     transition: all 0.3s ease;
     width: 85vw;
+    
 }   
 
 .serviceTitle {
@@ -92,6 +104,7 @@
     letter-spacing: 10px;
     text-transform: uppercase;
 }
+
 
 .plusIcon {
     float: right;
