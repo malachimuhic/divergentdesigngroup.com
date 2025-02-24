@@ -7,7 +7,7 @@ export const Dfo = () => {
             <h1 className={styles.logoTitle}>DIVERGE FROM ORDINARY</h1>
             <img 
                 className={styles.logopng} 
-                src={getImageUrl("dfo/CorrectedDDGLogoOnly.png")} 
+                src={getImageUrl("assets/dfo/CorrectedDDGLogoOnly.png")} 
                 alt="Divergent Design Group"
             />
         </div>

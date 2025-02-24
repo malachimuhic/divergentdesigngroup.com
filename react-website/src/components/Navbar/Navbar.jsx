@@ -11,7 +11,7 @@ export const Navbar = () => {
         <a href="/">
             <img 
                 className={styles.logo} 
-                src={getImageUrl("nav/ddgLong.png")} 
+                src={getImageUrl("assets/nav/ddgLong.png")} 
                 alt="Divergent Design Group"
             />
         </a>
@@ -23,8 +23,8 @@ export const Navbar = () => {
                 <img 
                     className={styles.menuBtn} 
                     src={menuHovered 
-                        ? getImageUrl("nav/closeIcon.png") 
-                        : getImageUrl("nav/menuIcon.png")
+                        ? getImageUrl("assets/nav/closeIcon.png") 
+                        : getImageUrl("assets/nav/menuIcon.png")
                     } 
                     alt="menu-button"
                 />

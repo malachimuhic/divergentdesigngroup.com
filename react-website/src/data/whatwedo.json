@@ -1,26 +1,26 @@
 [
     {
       "title": "Graphic Design",
-      "imageSrc": "capabilities/GraphicDesignIcon.png"
+      "imageSrc": "assets/capabilities/GraphicDesignIcon.png"
     },
     {
       "title": "CAD Design",
-      "imageSrc": "capabilities/CADdesignIcon.png"
+      "imageSrc": "assets/capabilities/CADdesignIcon.png"
     },
     {
       "title": "Project Management",
-      "imageSrc": "capabilities/ProjectManagementIcon.png"
+      "imageSrc": "assets/capabilities/ProjectManagementIcon.png"
     },
     {
       "title": "CNC",
-      "imageSrc": "capabilities/CNCIcon.png"
+      "imageSrc": "assets/capabilities/CNCIcon.png"
     },
     {
       "title": "Wood, Metal, & Plastics Fabrication",
-      "imageSrc": "capabilities/FabricationIcon.png"
+      "imageSrc": "assets/capabilities/FabricationIcon.png"
     },
     {
       "title": "Tech Intergration",
-      "imageSrc": "capabilities/TechIntegrationIcon.png"
+      "imageSrc": "assets/capabilities/TechIntegrationIcon.png"
     }
   ]

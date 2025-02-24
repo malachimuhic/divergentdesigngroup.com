@@ -32,7 +32,7 @@ export const Hero = () => {
             
             <div className={`${styles.scrollDown} ${showScroll ? styles.visible : ""}`}>
                 <h2>Scroll Down</h2>
-                <img src={getImageUrl("hero/DownArrow.svg")} alt="Scroll Down" />
+                <img src={getImageUrl("assets/hero/DownArrow.svg")} alt="Scroll Down" />
             </div>
             
             <div className={styles.bottomBlur} />

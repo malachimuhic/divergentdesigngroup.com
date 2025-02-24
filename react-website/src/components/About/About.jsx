@@ -29,7 +29,7 @@ export const About = () => {
                     >
                         <h3 className={styles.serviceTitle}>{item.title}</h3>
                         <img 
-                            src={getImageUrl("/about/PlusSign.png")}
+                            src={getImageUrl("assets/about/PlusSign.png")}
                             alt="Plus Sign" 
                             className={`${styles.plusIcon} ${expandedIndex === index ? styles.rotated : ""}`} 
                         />
